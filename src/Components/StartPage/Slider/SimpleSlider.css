@@ -1,0 +1,121 @@
+.slider__container {
+    padding: 1px 0;
+}
+.slide-img {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide__content {
+    width: 40%;
+    position: relative;
+}
+.slide__title {
+    color: #021004;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 135%;
+    margin-bottom: 10px;
+    text-shadow: 3px -3px 5px rgb(252, 255, 200);
+}
+.slide__text {
+    color: rgb(252, 255, 200);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    text-shadow: 2px 2px 1px #021004;
+}
+
+.slide-id1 .slide__content {
+    top: 45%;
+    left: 55%;
+}
+.slide-id2 .slide__content {
+    top: 45%;
+    left: 60%;
+}
+.slide-id2 .slide__title, .slide-id4 .slide__title {
+    color: #ffffef;
+}
+.slide-id3 .slide__content {
+    top: 2%;
+    left: 53%;
+}
+.slide-id4 .slide__content {
+    top: 5%;
+    left: 5%;
+}
+
+@media (max-width: 768px) {
+    .slide-img {
+        height: 400px;
+    }
+    .slide__content {
+        width: 60%;
+    }
+    .slide__title {
+        font-size: 32px;
+    }
+    .slide__text {
+        display: none;
+    }
+    .slide-id1 .slide__content {
+        left: 43%;
+    }
+    .slide-id2 .slide__content {
+        top: 21%;
+        left: 37%;
+    }
+    .slide-id3 .slide__content {
+        left: 30%;
+        top: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-img {
+        height: 300px;
+    }
+    .slide__content {
+        width: 70%;
+    }
+    .slide__title {
+        font-size: 24px;
+    }
+    .slide-id1 .slide__content {
+        left: 30%;
+    }
+    .slide-id1 .slide__title, .slide-id3 .slide__title {
+        color: #ffffef;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 3;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: #89960e;
+}
+.slick-dots li button:before {
+    content: '';
+    display: block;
+    background-color: #6ef52a;
+    height: 5px;
+    top: -25px;
+    border-radius: 5px;
+}
