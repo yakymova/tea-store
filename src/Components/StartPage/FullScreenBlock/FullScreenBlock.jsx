@@ -6,7 +6,7 @@ const FullScreenBlock = ({ data }) => {
             <div className="full-screen__body">
 
             </div>
-            <video autoPlay muted loop preload="auto" class="full-screen__video"
+            <video autoPlay muted loop preload="auto" className="full-screen__video"
                 src={data.videoUrl}></video>
         </section>
     )

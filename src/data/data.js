@@ -1,6 +1,10 @@
 import search from '../assets/icons/search.svg';
 import cart from '../assets/icons/cart.svg';
 import authorization from '../assets/icons/authorization.svg';
+import linkedin from '../assets/icons/socialMedia/linkedin.svg';
+import facebook from '../assets/icons/socialMedia/facebook.svg';
+import instagram from '../assets/icons/socialMedia/instagram.svg';
+import twitter from '../assets/icons/socialMedia/twitter.svg';
 
 let state = {
     "header": {
@@ -53,9 +57,30 @@ let state = {
             }
         ],
         "videoUrl": "https://cdn.create.vista.com/api/media/medium/406237710/stock-video-dried-organic-tea-leaves-falling?token="
+    },
+    "footer": {
+        "icons": [
+            { icon: linkedin, url: 'https://www.linkedin.com/' },
+            { icon: facebook, url: 'https://facebook.com/' },
+            { icon: instagram, url: '"https://www.instagram.com/' },
+            { icon: twitter, url: 'https://twitter.com/' }
+        ],
+        "links": [
+            {
+                "name": "contact",
+                "path": "/"
+            },
+            {
+                "name": "terms of services",
+                "path": "/"
+            },
+            {
+                "name": "shipping and returns",
+                "path": "/"
+            }
+        ],
+        "copyring": "© all rights reserved"
     }
-
-
 }
 
 export default state;

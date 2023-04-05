@@ -6,14 +6,14 @@ import './StartPage.css';
 
 const StartPage = ({ startPage }) => {
     return (
-        <main>
+        <div className='main'>
             <FullScreenBlock data={startPage} />
             <div className="start-page-content">
                 <SimpleSlider data={startPage.slider} />
                 <LatestShopping />
                 {/* <Product /> */}
             </div>
-        </main>
+        </div>
     )
 }
 

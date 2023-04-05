@@ -3,4 +3,5 @@
     background-color: rgb(188, 184, 149, 0.9);
     position: relative;
     z-index: 3;
+    padding-bottom: 30px;
 }

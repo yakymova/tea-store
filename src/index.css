@@ -7,6 +7,9 @@
   color: #000000;
   box-sizing: border-box;
 }
+#root {
+  height: 100vh;
+}
 [class*='__container'] {
   max-width: 1278px;
   padding: 0 15px;

@@ -1,7 +1,7 @@
 .latest-shopping__container {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding-top: 150px;
     margin-bottom: 39px;
 }

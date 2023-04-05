@@ -80,5 +80,7 @@ header {
     }
     .header__menu ul {
         column-gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

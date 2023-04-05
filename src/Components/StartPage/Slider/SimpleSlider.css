@@ -1,5 +1,6 @@
 .slider__container {
     padding: 1px 0;
+    max-width: none;
 }
 .slide-img {
     width: 100%;
