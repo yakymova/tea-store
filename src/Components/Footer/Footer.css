@@ -47,11 +47,14 @@ footer {
     border: none;
     font-size: 25px;
 }
+.footer__form-btn:hover {
+    cursor: pointer;
+}
 .footer__copyring {
     font-weight: 400;
     font-size: 16px;
     line-height: 169%;
-    color: #000000;
+    color: #707070;
 }
 .footer__social-media {
     justify-self: end;
@@ -64,13 +67,18 @@ footer {
     gap: 30px;
 }
 .social-media__icon {
-    width: 18px;
     height: 18px;
 }
-.social-media__icon:nth-child(2) {
+.email {
+    width: 21px;
+}
+.facebook {
     width: 10px;
 }
-.social-media__icon:nth-child(4) {
+.instagram {
+    width: 18px;
+}
+.twitter {
     width: 20px;
 }
 .social-media__icon a {

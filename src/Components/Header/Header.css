@@ -20,16 +20,22 @@ header {
     list-style: none;
     position: relative;
 }
-.header__menu li a{
+.header__menu li a {
     font-weight: 500;
     font-size: 24px;
     line-height: 169%;
     color: #ffffff;
     text-shadow: 1px 1px 5px black, 1px 1px 5px #30ff4875;
 }
+.header__menu li a:not(.active):hover {
+    color: #ebe5b0;
+}
+.header__menu a.active:hover {
+    cursor: default;
+}
 .header__menu a::after {
     content: "";
-    height: 1px;
+    height: 2px;
     width: 0;
     background-color: #cabb36;
     position: absolute;
@@ -38,6 +44,9 @@ header {
     transition: all 0.5s;
 }
 .header__menu a:hover::after {
+    width: 100%;
+}
+.header__menu a.active::after {
     width: 100%;
 }
 .header__logo {
@@ -60,9 +69,14 @@ header {
     height: 30px;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s;
 
     background-color: transparent;
     border: none;
+}
+.header__icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 @media (max-width: 768px) {
     .header__container {

@@ -13,7 +13,7 @@ const Header = ({ header }) => {
                 <nav className="header__menu">
                     <ul>
                         {
-                            header.links.map(link => <li><NavLink to={link.path} key={link.name}>{link.name}</NavLink></li>)
+                            header.links.map(link => <li><NavLink to={link.path} key={link.name}>{link.name} </NavLink></li>)
                         }
                     </ul>
                 </nav>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Products.css';
+import ProductsItem from './ProductsItem';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -11,20 +12,9 @@ const Products = () => {
     }, [])
 
     return (
-        <div className="products__container">
+        <div className="products">
             {
-                products.map(product => {
-                    return (
-                        <div className="products__item item-products">
-                            <div className="item-products__image">
-                                <img src={product.images[0]} alt={`product-id ${product.id}`} />
-                                <button className="item-products__btn">add to cart</button>
-                            </div>
-                            <h4 className="item-products__title">{product.title}</h4>
-                            <p className="item-products__price">$ {product.price}</p>
-                        </div>
-                    )
-                })
+                products.map(product => <ProductsItem product={product} key={product.id} />)
             }
         </div>
     )

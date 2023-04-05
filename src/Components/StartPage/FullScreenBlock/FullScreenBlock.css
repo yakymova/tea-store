@@ -8,6 +8,65 @@
     position: relative;
     z-index: 2;
     min-height: 100vh;
+    text-align: center;
+}
+.full-screen__title {
+    text-transform: uppercase;
+    font-family: 'Jacques Francois', serif;
+    font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.5em;
+    color: #f7ebca;
+    text-shadow: 3px 1px 1px #1e3647;
+    margin-top: 65px;
+    margin-bottom: 45px;
+    opacity: 0;
+    animation: appear 2s linear 0.2s 1 forwards;
+}
+.full-screen__subtitle {
+    text-transform: uppercase;
+    font-family: 'Jacques Francois', serif;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.5em;
+    color: #f3dd9e;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: appear 2s linear 0.4s 1 forwards;
+}
+.full-screen__text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    color: #c3ba9a;
+    text-shadow: 1px 1px 1px #ffffff;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: appear 2s linear 0.5s 1 forwards;
+}
+.full-screen__btn {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-top: 10px solid #5db367;
+    border-right: 10px solid #5db367;
+    border-radius: 25% 5% 25%;
+    transform: rotate(135deg);
+    transition: all 0.3s;
+    opacity: 0;
+    animation: appear 2s linear 0.2s 1 forwards;
+}
+.full-screen__btn:hover {
+    transform: rotate(135deg) scale(1.1);
+    border-top: 10px solid #ffc763;
+    border-right: 10px solid #ffc763;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .full-screen__video {
     position: fixed;

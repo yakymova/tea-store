@@ -1,0 +1,11 @@
+.shop {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.shop__title {
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 130%;
+    text-align: start;
+    padding-bottom: 40px;
+}

@@ -1,4 +1,4 @@
-.latest-shopping__container {
+.latest-shopping {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -16,11 +16,15 @@
     font-size: 24px;
     line-height: 130%;
     text-transform: capitalize;
-    color: #453926;;
+    color: #453926;
+    transition: all 0.3s;
+}
+.latest-shopping__link:hover {
+    text-shadow: 1px -1px 1px #453926;
 }
 
 @media (max-width: 600px) {
-    .latest-shopping__container {
+    .latest-shopping {
         padding-top: 90px;
     }
     .latest-shopping__title {

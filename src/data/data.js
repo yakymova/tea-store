@@ -1,7 +1,7 @@
 import search from '../assets/icons/search.svg';
 import cart from '../assets/icons/cart.svg';
 import authorization from '../assets/icons/authorization.svg';
-import linkedin from '../assets/icons/socialMedia/linkedin.svg';
+import email from '../assets/icons/socialMedia/email.svg';
 import facebook from '../assets/icons/socialMedia/facebook.svg';
 import instagram from '../assets/icons/socialMedia/instagram.svg';
 import twitter from '../assets/icons/socialMedia/twitter.svg';
@@ -60,10 +60,10 @@ let state = {
     },
     "footer": {
         "icons": [
-            { icon: linkedin, url: 'https://www.linkedin.com/' },
-            { icon: facebook, url: 'https://facebook.com/' },
-            { icon: instagram, url: '"https://www.instagram.com/' },
-            { icon: twitter, url: 'https://twitter.com/' }
+            { icon: email, name: 'email', url: 'mailto:#' },
+            { icon: facebook, name: 'facebook', url: 'https://facebook.com/' },
+            { icon: instagram, name: 'instagram', url: '"https://www.instagram.com/' },
+            { icon: twitter, name: 'twitter', url: 'https://twitter.com/' }
         ],
         "links": [
             {

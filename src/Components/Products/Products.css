@@ -1,4 +1,4 @@
-.products__container {
+.products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 50px;
@@ -56,9 +56,13 @@
 }
 .item-products__title {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 130%;
     margin: 24px 0 16px;
+}
+.item-products__title:hover {
+    cursor: pointer;
+    text-shadow: 1px -1px 1px #453926;
 }
 .item-products__price {
     font-weight: 500;

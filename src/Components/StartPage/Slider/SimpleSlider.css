@@ -12,6 +12,9 @@
     width: 40%;
     position: relative;
 }
+.slide__content:hover {
+    cursor: pointer;
+}
 .slide__title {
     color: #021004;
     font-weight: 600;
@@ -116,7 +119,7 @@
     content: '';
     display: block;
     background-color: #6ef52a;
-    height: 5px;
+    height: 10px;
     top: -25px;
     border-radius: 5px;
 }

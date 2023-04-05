@@ -12,14 +12,14 @@ const Footer = ({ footer }) => {
                 </menu>
                 <form className="footer__form">
                     <input type="text" placeholder='Give an email, get the newsletter.' />
-                    <button className='footer__form-btn'>&#8594;</button>
+                    <button className='footer__form-btn' onClick={(e) => e.preventDefault()}>&#8594;</button>
                 </form>
                 <div className="footer__copyring">
                     {footer.copyring}
                 </div>
                 <div className="footer__social-media social-media__icons">
                     {
-                        footer.icons.map(icon => <div className='social-media__icon'><a href={icon.url} target='_blank' style={{ backgroundImage: `url(${icon.icon})` }}></a></div>)
+                        footer.icons.map(icon => <div className={`social-media__icon ${icon.name}`}><a href={icon.url} target='_blank' style={{ backgroundImage: `url(${icon.icon})` }}></a></div>)
                     }
                 </div>
             </div>
