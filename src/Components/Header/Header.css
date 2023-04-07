@@ -25,7 +25,7 @@ header {
     font-size: 24px;
     line-height: 169%;
     color: #ffffff;
-    text-shadow: 1px 1px 5px black, 1px 1px 5px #30ff4875;
+    text-shadow: 2px 2px 5px black;
 }
 .header__menu li a:not(.active):hover {
     color: #ebe5b0;

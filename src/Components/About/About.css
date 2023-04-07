@@ -1,0 +1,52 @@
+.about {
+    padding-top: 90px;
+}
+.about__content {
+    max-width: 670px;
+    margin: 0 auto;
+}
+.about__title {
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 130%;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.about__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 46px;
+}
+.about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    padding-bottom: 20px;
+}
+.about__img {
+    height: 150px;
+    background-image: url('https://cdn.create.vista.com/api/media/small/605126804/stock-photo-collage-different-types-dry-tea');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0 20px;
+}
+.about__list-item {
+    list-style: none;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 167%;
+}
+.about__list-item::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: rgb(0, 128, 0);
+    box-shadow: 0 0 2px rgb(255, 255, 0);
+}

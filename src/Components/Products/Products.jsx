@@ -11,6 +11,10 @@ const Products = () => {
             .then(response => setProducts(response.data));
     }, [])
 
+    fetch('https://tea-collection.herokuapp.com/types_of_tea/0')
+        .then(response => response.json())
+        .then(data => console.log(data));
+
     return (
         <div className="products">
             {

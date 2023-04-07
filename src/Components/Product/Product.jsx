@@ -3,6 +3,7 @@ import "./Product.css";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import ProductSlider from "./ProductSlider";
+import ProductRating from "./ProductRating/ProductRating";
 
 const Product = () => {
     const [product, setProduct] = useState('');
@@ -46,6 +47,7 @@ const Product = () => {
                         : <button className="product__btn" onClick={() => addProductInCart()}>add to cart</button>
 
                     }
+                    <ProductRating />
                 </div>
             </div>
         </section>
