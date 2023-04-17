@@ -21,7 +21,7 @@ const SimpleSlider = ({ data }) => {
                 {
                     data.map(el => {
                         return (
-                            <div className={`slide-id${el.id}`}>
+                            <div className={`slide-id${el.id}`} key={el.id}>
                                 <div className='slide-img' style={{ backgroundImage: `url(${el.image})` }}>
                                     <div className="slide__content">
                                         <h3 className='slide__title'>

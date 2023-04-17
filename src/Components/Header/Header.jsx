@@ -13,13 +13,13 @@ const Header = ({ header }) => {
                 <nav className="header__menu">
                     <ul>
                         {
-                            header.links.map(link => <li><NavLink to={link.path} key={link.name}>{link.name} </NavLink></li>)
+                            header.links.map(link => <li key={link.name}><NavLink to={link.path} key={link.name}>{link.name} </NavLink></li>)
                         }
                     </ul>
                 </nav>
                 <div className="header__icons">
                     {
-                        header.icons.map(item => <button className='header__icon' style={{ backgroundImage: `url(${item})` }}></button>)
+                        header.icons.map((item, ind) => <button className='header__icon' key={ind} style={{ backgroundImage: `url(${item})` }}></button>)
                     }
                 </div>
             </div>

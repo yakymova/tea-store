@@ -1,5 +1,5 @@
 import './LatestShopping.css';
-import Products from '../../Products/Products';
+import ProductsContainer from '../../Products/ProductsContainer';
 import { NavLink } from 'react-router-dom';
 
 const LatestShopping = () => {
@@ -9,7 +9,7 @@ const LatestShopping = () => {
                 <h2 className="latest-shopping__title">Shop The Latest</h2>
                 <NavLink to='/shop' className='latest-shopping__link'>View all</NavLink>
             </div>
-            <Products />
+            <ProductsContainer count={6} />
         </section>
     )
 }

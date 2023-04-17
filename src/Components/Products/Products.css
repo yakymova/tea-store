@@ -17,6 +17,7 @@
     box-shadow: 1px 1px 5px black;
     position: relative;
     transition: all 0.3s;
+    margin-top: 10px;
 }
 .item-products__image:hover {
     box-shadow: 1px 1px 10px black;

@@ -4,15 +4,15 @@ import Slider from "react-slick";
 
 const ProductSlider = ({ images }) => {
     let settings = {
-        // dots: true,
+        dots: true,
         arrows: false,
         infinite: true,
         pauseOnHover: false,
-        speed: 600,
+        speed: 700,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4500,
+        // autoplay: true,
+        autoplaySpeed: 6000,
         cssEase: "linear",
     };
 
@@ -21,7 +21,7 @@ const ProductSlider = ({ images }) => {
         <div className="product__slider">
             <Slider {...settings}>
                 {
-                    images?.map(img => <div className="product__image"><img src={img} alt="product" /></div>)
+                    images?.map((img, ind) => <div className="product__image" key={ind}><img src={img} alt="product" /></div>)
                 }
             </Slider>
         </div>

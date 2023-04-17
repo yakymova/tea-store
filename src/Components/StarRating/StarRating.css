@@ -1,0 +1,36 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.stars {
+    display: flex;
+}
+.star {
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+    background-color: #cac7c7;
+    clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82%  100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+    transition: all 0.3s;
+}
+.star.selected {
+    background-color: #A18A68;
+}
+.stars:not(.only-read):hover .star {
+    cursor: pointer;
+    background-color: rgba(182, 176, 78, 0.29);
+}
+.stars:not(.only-read) .star:hover {
+    background-color: rgb(222, 222, 118);
+}
+.rating  {
+    padding-top: 10px;
+}
+.rating span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    color: #707070;
+}

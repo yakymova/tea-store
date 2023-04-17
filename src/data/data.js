@@ -24,7 +24,7 @@ let state = {
             },
             {
                 "name": "About",
-                "path": "/our-story"
+                "path": "/about"
             }
         ],
         "icons": [search, authorization, cart]
@@ -68,7 +68,7 @@ let state = {
         "links": [
             {
                 "name": "contact",
-                "path": "/"
+                "path": "/contact"
             },
             {
                 "name": "terms of services",

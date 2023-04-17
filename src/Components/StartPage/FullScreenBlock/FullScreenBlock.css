@@ -21,7 +21,7 @@
     margin-top: 65px;
     margin-bottom: 45px;
     opacity: 0;
-    animation: appear 2s linear 0.2s 1 forwards;
+    animation: appear 2s linear 0.1s 1 forwards;
 }
 .full-screen__subtitle {
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     color: #f3dd9e;
     margin-bottom: 30px;
     opacity: 0;
-    animation: appear 2s linear 0.4s 1 forwards;
+    animation: appear 2s linear 0.2s 1 forwards;
 }
 .full-screen__text {
     font-size: 24px;
@@ -42,7 +42,7 @@
     text-shadow: 1px 1px 1px #ffffff;
     margin-bottom: 20px;
     opacity: 0;
-    animation: appear 2s linear 0.5s 1 forwards;
+    animation: appear 2s linear 0.3s 1 forwards;
 }
 .full-screen__btn {
     display: block;
@@ -55,7 +55,7 @@
     transform: rotate(135deg);
     transition: all 0.3s;
     opacity: 0;
-    animation: appear 2s linear 0.2s 1 forwards;
+    animation: appear 2s linear 0.1s 1 forwards;
 }
 .full-screen__btn:hover {
     transform: rotate(135deg) scale(1.1);

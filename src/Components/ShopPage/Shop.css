@@ -1,0 +1,38 @@
+.shop {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.shop__title {
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 130%;
+    text-align: start;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .shop {
+        padding-top: 80px;
+    }
+    .shop__title {
+        padding-bottom: 40px;
+    }
+    .shop__content {
+        display: flex;
+        gap: 20px;
+    }
+    .filter {
+        flex: 0 1 30%;
+    }
+    .products {
+        flex: 0 1 65%;
+    }
+}
+@media (min-width: 1024px) {
+    .filter {
+        flex: 0 1 20%;
+    }
+    .products {
+        flex: 0 1 75%;
+    }
+}
