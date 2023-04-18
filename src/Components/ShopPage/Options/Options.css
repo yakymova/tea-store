@@ -1,21 +1,24 @@
 .filter {
     margin-bottom: 50px;
 }
-.filter__by-category {
+.filter__by-category,
+.sort__by {
     position: relative;
     margin-top: 20px;
 }
-.filter__by-category  menu {
+.filter__by-category  menu,
+.sort__by menu {
     width: 100%;
     display: none;
 }
-.filter__by-category  menu.visible {
+.filter__by-category  menu.filter-visible,
+.sort__by  menu.sort-visible {
     display: block;
-    position: absolute;
+    /* position: absolute;
     top: 100%;
-    left: 0;
+    left: 0; */
     background-color: #ffffff;
-    z-index: 2;
+    /* z-index: 2; */
 }
 .filter__search {
     border: none;
@@ -27,18 +30,31 @@
     background-position: 90% 20%;
     border-bottom: 1px solid #D8D8D8;
 }
+@media (max-width: 768px) {
+    .filter__by-category  menu.filter-visible,
+    .sort__by  menu.sort-visible {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 2;
+    }
+}
 
 @media (min-width: 768px) {
-    .filter__by-category {
+    .filter__by-category,
+    .sort__by {
         width: 80%;
     }
+
     .filter__search {
         width: 80%;
     }
 }
 
-
-.filter__by-btn {
+.filter__by-btn,
+.sort__by-btn {
     height: 40px;
     width: 100%;
     text-align: start;
@@ -50,14 +66,17 @@
     border-radius: 4px;
     background-color: transparent;
 }
-.filter__by-btn:hover {
+.filter__by-btn:hover,
+.sort__by-btn:hover {
     cursor: pointer;
     background-color: #d8d8d874;
 }
-.filter__by-btn.active {
+.filter__by-btn.active
+.sort__by-btn.active {
     background-color: #D8D8D8;
 }
-.filter__by-btn::after {
+.filter__by-btn::after,
+.sort__by-btn::after {
     content: "";
     display: block;
     width: 10px;
@@ -84,7 +103,8 @@
     background-color: #a18a6811;
     font-weight: 500;
 }
-.filter__item {
+.filter__item,
+.sort__item {
     width: 100%;
     list-style: none;
     font-size: 18px;
@@ -92,7 +112,8 @@
     margin-bottom: 10px;
     padding-left: 10px;
 }
-.filter__item:hover {
+.filter__item:hover,
+.sort__item:hover {
     cursor: pointer;
     background-color: #a18a6811;
     font-weight: 500;

@@ -1,6 +1,7 @@
 const initialState = {
     searchQuery: '',
     filterBy: 'all',
+    sortBy: ''
 };
 
 const filterReducer = (state = initialState, action) => {
@@ -14,6 +15,11 @@ const filterReducer = (state = initialState, action) => {
             return {
                 ...state,
                 searchQuery: action.payload,
+            };
+        case 'SET_SORT':
+            return {
+                ...state,
+                sortBy: action.payload,
             };
         default:
             return state;

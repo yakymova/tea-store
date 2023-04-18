@@ -1,11 +1,12 @@
-// import { useEffect, useState } from 'react';
+import React from "react";
 import './Products.css';
 import Products from './Products';
 import { getProductsFromJson } from '../../api/api';
 // import { getProductsFromUrl } from '../../api/api';
 import { setProducts } from '../../Redux/actions/products';
-import React from "react";
 import { connect } from "react-redux";
+import { addToCart, removeFromCart } from '../../Redux/actions/cart';
+import orderBy from 'lodash/orderBy';
 
 class ProductsContainer extends React.Component {
 
@@ -19,20 +20,34 @@ class ProductsContainer extends React.Component {
 
     render() {
         return (
-            <Products products={this.props.products} />
+            <Products {...this.props} />
         )
     }
 }
 
-let filterProducts = (state, filterBy) => {
-    if (filterBy === 'all') return state;
+let sortProducts = (products, sortBy) => {
+    switch (sortBy) {
+        case 'popular':
+            return orderBy(products, 'rating.rate', 'desc');
+        case 'price_low':
+            return orderBy(products, 'price', 'asc');
+        case 'price_high':
+            return orderBy(products, 'price', 'desc');
+        default:
+            return products;
+    }
+};
 
-    return state.filter(el => el.category === filterBy)
+let filterProducts = (state, filterBy, sortBy) => {
+    if (filterBy === 'all') return sortProducts(state, sortBy);
+
+    return sortProducts(state.filter(el => el.category === filterBy), sortBy)
 }
 
 let mapStateToProps = (state) => {
     return {
-        products: filterProducts(state.products.products, state.filter.filterBy)
+        products: filterProducts(state.products.products, state.filter.filterBy, state.filter.sortBy),
+        cart: state.cart.items
     }
 }
 
@@ -41,31 +56,16 @@ let mapDispatchToProps = (dispatch) => {
         setProducts: (products) => {
             let action = setProducts(products);
             dispatch(action);
+        },
+        addToCart: (product) => {
+            dispatch(addToCart(product))
+        },
+        removeFromCart: (id) => {
+            dispatch(removeFromCart(id))
         }
     }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductsContainer);
 
-
-// const ProductsContainer = (props) => {
-//     const [products, setProducts] = useState([]);
-
-//     useEffect(() => {
-//         // getProductsFromUrl(props.count)
-//         //     .then(res => setProducts(res))
-
-//         setProducts(getProductsFromJson(props.count));
-//     }, [props.count])
-
-//     return (
-//         <div className="products">
-//             {
-//                 products.map(product => <Products product={product} key={product.id} />)
-//             }
-//         </div>
-//     )
-// }
-
-// export default ProductsContainer;
 

@@ -1,11 +1,10 @@
-// import { useNavigate } from 'react-router-dom';
-// import { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import StarRating from '../StarRating/StarRating';
 
 
-const Products = ({ products }) => {
-
+const Products = (props) => {
+    const { products, cart, addToCart, removeFromCart } = props;
+    console.log(props);
     return (
         <div className="products">
             {
@@ -18,7 +17,13 @@ const Products = ({ products }) => {
                                 <NavLink to={`product/${product.id}`} >
                                     <img src={product.images} alt={`product-id ${product.id}`} />
                                 </NavLink>
-                                <button className="item-products__btn">add to cart</button>
+
+                                {
+                                    cart.filter(item => item.id === product.id).length > 0
+                                        ? <button className="item-products__btn added" onClick={removeFromCart.bind(this, product.id)}>in cart</button>
+                                        : <button className="item-products__btn" onClick={addToCart.bind(this, product)}>add to cart</button>
+                                }
+
                             </div>
 
                             <NavLink to={`product/${product.id}`} >
@@ -36,41 +41,3 @@ const Products = ({ products }) => {
 }
 
 export default Products;
-
-
-
-
-// const Products = ({ product }) => {
-//     const [isProductInCart, setIsProductInCart] = useState(false);
-//     let navigate = useNavigate();
-
-//     const selectProduct = (productId) => {
-//         navigate(`product/${productId}`)
-//     }
-
-//     const addProductInCart = () => {
-//         setIsProductInCart(true);
-//     }
-
-//     const deleteProductFromCart = () => {
-//         setIsProductInCart(false);
-//     }
-
-//     return (
-//         <div className="products__item item-products">
-//             <StarRating starsSelected={product?.rating?.rate} countRatings={product?.rating?.count} />
-//             <div className="item-products__image">
-//                 <img src={product.images} alt={`product-id ${product.id}`} onClick={() => selectProduct(product.id)} />
-//                 {isProductInCart
-//                     ? <button className="item-products__btn added" onClick={() => deleteProductFromCart()}>delete from cart</button>
-//                     : <button className="item-products__btn" onClick={() => addProductInCart()}>add to cart</button>
-
-//                 }
-//             </div>
-//             <h4 className="item-products__title" onClick={() => selectProduct(product.id)}>{product.title}</h4>
-//             <p className="item-products__price">$ {product.price}</p>
-//         </div>
-//     )
-// }
-
-// export default Products;

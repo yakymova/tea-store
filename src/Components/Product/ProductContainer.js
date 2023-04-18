@@ -4,6 +4,7 @@ import { getSelectedProductFromJson, getReviewsFromJson } from "../../api/api";
 import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { setReviews } from '../../Redux/actions/reviews';
+import { addToCart, removeFromCart } from '../../Redux/actions/cart'
 
 const ProductContainer = (props) => {
     const [product, setProduct] = useState('');
@@ -33,13 +34,16 @@ const ProductContainer = (props) => {
     }
 
     return (
-        <Product product={product} amount={amount} reviews={props.reviews} menuItem={menuItem} changeMenuItemInDescription={changeMenuItemInDescription} changeAmountDecrement={changeAmountDecrement} changeAmountIncrement={changeAmountIncrement} />
+        <Product {...props} product={product} amount={amount} menuItem={menuItem} changeMenuItemInDescription={changeMenuItemInDescription} changeAmountDecrement={changeAmountDecrement} changeAmountIncrement={changeAmountIncrement} />
     )
 }
+
 let mapStateToProps = (state) => {
+    console.log(state.cart);
     return {
-        reviews: state.reviews.reviews
+        reviews: state.reviews.reviews,
+        cart: state.cart.items
     }
 }
 
-export default connect(mapStateToProps, { setReviews })(ProductContainer);
+export default connect(mapStateToProps, { setReviews, addToCart, removeFromCart })(ProductContainer);
