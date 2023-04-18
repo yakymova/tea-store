@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tea-store/static/css/main.2c1d80a0.css",
-    "main.js": "/tea-store/static/js/main.82668757.js",
+    "main.css": "/tea-store/static/css/main.0e505c25.css",
+    "main.js": "/tea-store/static/js/main.b7f17c19.js",
     "static/media/search.svg": "/tea-store/static/media/search.ad9ed01a72c407bd4c29f66313dbc042.svg",
     "static/media/authorization.svg": "/tea-store/static/media/authorization.3bf4c6981f4f5b9a2ef824715ae0a3ce.svg",
     "static/media/slick.svg": "/tea-store/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -14,11 +14,11 @@
     "index.html": "/tea-store/index.html",
     "static/media/email.svg": "/tea-store/static/media/email.c33ef0884d876310899a54d62ff7d8e3.svg",
     "static/media/facebook.svg": "/tea-store/static/media/facebook.8bafeda20f0c46bf3d57db95217ca87d.svg",
-    "main.2c1d80a0.css.map": "/tea-store/static/css/main.2c1d80a0.css.map",
-    "main.82668757.js.map": "/tea-store/static/js/main.82668757.js.map"
+    "main.0e505c25.css.map": "/tea-store/static/css/main.0e505c25.css.map",
+    "main.b7f17c19.js.map": "/tea-store/static/js/main.b7f17c19.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c1d80a0.css",
-    "static/js/main.82668757.js"
+    "static/css/main.0e505c25.css",
+    "static/js/main.b7f17c19.js"
   ]
 }
