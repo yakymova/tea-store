@@ -12,7 +12,7 @@ const SimpleSlider = ({ data }) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 6000,
         cssEase: "linear"
     };
     return (

@@ -1,7 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import './Footer.css';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { createRef } from 'react';
 
 const Footer = ({ footer }) => {
+    let btn = createRef();
+    window.onscroll = () => {
+        if (window.scrollY > 400) btn.current.className = 'scroll-to-top';
+        if (window.scrollY < 400) btn.current.className = ''
+    }
     return (
         <footer>
             <div className="footer__container">
@@ -23,6 +30,7 @@ const Footer = ({ footer }) => {
                     }
                 </div>
             </div>
+            <button onClick={() => scroll.scrollToTop()} ref={btn}></button>
         </footer>
     )
 }

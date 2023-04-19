@@ -5,9 +5,13 @@ const initialState = {
 const cartReducer = (state = initialState, action) => {
     switch (action.type) {
         case "ADD_TO_CART":
+            let newItems = [];
+            for (let i = 0; i < action.amount; i++) {
+                newItems.push(action.product);
+            }
             return {
                 ...state,
-                items: [...state.items, action.payload]
+                items: [...state.items, ...newItems]
             };
         case "REMOVE_FROM_CART":
             return {

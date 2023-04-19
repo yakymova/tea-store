@@ -11,8 +11,10 @@ import orderBy from 'lodash/orderBy';
 class ProductsContainer extends React.Component {
 
     componentDidMount() {
-        getProductsFromJson(this.props.count)
-            .then(res => this.props.setProducts(res))
+        this.props.setProducts(getProductsFromJson(this.props.count))
+
+        // getProductsFromJson(this.props.count)
+        //     .then(res => this.props.setProducts(res))
 
         // getProductsFromUrl(this.props.count)
         //     .then(res => this.props.setProducts(res))
@@ -44,9 +46,21 @@ let filterProducts = (state, filterBy, sortBy) => {
     return sortProducts(state.filter(el => el.category === filterBy), sortBy)
 }
 
+let searchProducts = (products, searchQuery) => {
+    return products.filter(
+        product =>
+            product.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0 ||
+            product.category.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0
+    );
+}
+
+let getProducts = (products, filterBy, sortBy, searchQuery) => {
+    return searchProducts(filterProducts(products, filterBy, sortBy), searchQuery)
+}
+
 let mapStateToProps = (state) => {
     return {
-        products: filterProducts(state.products.products, state.filter.filterBy, state.filter.sortBy),
+        products: state.products.products && getProducts(state.products.products, state.filter.filterBy, state.filter.sortBy, state.filter.searchQuery),
         cart: state.cart.items
     }
 }
@@ -57,8 +71,8 @@ let mapDispatchToProps = (dispatch) => {
             let action = setProducts(products);
             dispatch(action);
         },
-        addToCart: (product) => {
-            dispatch(addToCart(product))
+        addToCart: (product, amount) => {
+            dispatch(addToCart(product, amount))
         },
         removeFromCart: (id) => {
             dispatch(removeFromCart(id))

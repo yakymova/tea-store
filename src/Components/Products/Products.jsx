@@ -4,7 +4,6 @@ import StarRating from '../StarRating/StarRating';
 
 const Products = (props) => {
     const { products, cart, addToCart, removeFromCart } = props;
-    console.log(props);
     return (
         <div className="products">
             {
@@ -20,8 +19,8 @@ const Products = (props) => {
 
                                 {
                                     cart.filter(item => item.id === product.id).length > 0
-                                        ? <button className="item-products__btn added" onClick={removeFromCart.bind(this, product.id)}>in cart</button>
-                                        : <button className="item-products__btn" onClick={addToCart.bind(this, product)}>add to cart</button>
+                                        ? <button className="item-products__btn added" onClick={removeFromCart.bind(this, product.id)}>in cart (click to delete)</button>
+                                        : <button className="item-products__btn" onClick={addToCart.bind(this, product, 1)}>add to cart</button>
                                 }
 
                             </div>

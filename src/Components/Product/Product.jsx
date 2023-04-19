@@ -36,7 +36,7 @@ const Product = (props) => {
                         {
                             props.cart.filter(item => item.id === product.id).length > 0
                                 ? <button className="product__btn added" onClick={removeFromCart.bind(this, product.id)}>in cart</button>
-                                : <button className="product__btn" onClick={addToCart.bind(this, product)}>add to cart</button>
+                                : <button className="product__btn" onClick={addToCart.bind(this, product, amount)}>add to cart</button>
                         }
 
                     </div>

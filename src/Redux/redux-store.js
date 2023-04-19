@@ -19,5 +19,5 @@ const store = configureStore({
         reviews: reviewsReducer
     }
 })
-console.log(store.dispatch);
+
 export default store;

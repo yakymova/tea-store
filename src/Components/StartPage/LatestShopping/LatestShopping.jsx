@@ -9,7 +9,7 @@ const LatestShopping = () => {
                 <h2 className="latest-shopping__title">Shop The Latest</h2>
                 <NavLink to='/shop' className='latest-shopping__link'>View all</NavLink>
             </div>
-            <ProductsContainer count={6} />
+            <ProductsContainer count={4} />
         </section>
     )
 }

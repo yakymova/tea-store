@@ -461,6 +461,27 @@
                 "brand": "Samado",
                 "volume": "390 ml"
             }
+        },
+        {
+            "id": 23,
+            "title": "Herbal organic tea",
+            "price": 200,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat. Tempore, minus autem.",
+            "category": "set tea",
+            "images": [
+                "https://cdn.create.vista.com/api/media/medium/211767210/stock-photo-circles-dried-herbal-organic-tea?token=",
+                "https://cdn.create.vista.com/api/media/medium/211767210/stock-photo-circles-dried-herbal-organic-tea?token="
+            ],
+            "rating": {
+                "rate": 4,
+                "count": 8
+            },
+            "aditional": {
+                "country": "China",
+                "Tea properties": "Invigorates, Refreshes",
+                "Tastes": "Without additives",
+                "weight": "300g"
+            }
         }
     ],
     "categories": [
@@ -978,6 +999,30 @@
                     "date": "25.04.2022",
                     "grade": 5,
                     "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit amet consectetur, adipisicing elit, adipisicing elit. "
+                }
+            ]
+        },
+        {
+            "id": 123,
+            "productId": 23,
+            "reviews": [
+                {
+                    "name": "Ethan Reed",
+                    "date": "19.03.2023",
+                    "grade": 4,
+                    "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit dolor sit amet consectetur, adipisicing elit."
+                },
+                {
+                    "name": "Lucas Kim",
+                    "date": "11.12.2022",
+                    "grade": 5,
+                    "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit amet consectetur, adipisicing elit"
+                },
+                {
+                    "name": "Ava Patel",
+                    "date": "17.06.2022",
+                    "grade": 4,
+                    "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
                 }
             ]
         }

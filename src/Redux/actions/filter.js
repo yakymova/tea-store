@@ -15,4 +15,4 @@ export const setSearchQuery = value => ({
 export const setSort = sort => ({
     type: SET_SORT,
     payload: sort,
-});
+}); 

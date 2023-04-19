@@ -1,22 +1,44 @@
-let initialState = [];
+let initialState = {
+    reviews: [],
+    newReview: {}
+};
 
 const reviewsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_REVIEWS':
             return { ...state, reviews: action.payload }
-        // case UPDATE_NEW_MESSAGE_BODY:
-        //     return {
-        //         ...state,
-        //         newMessageBody: action.body
-        //     }
-        // case SEND_MESSAGE:
-        //     let body = state.newMessageBody;
-        //     return {
-        //         ...state, messages: [...state.messages, { id: 6, message: body }],
-        //         newMessageBody: ''
-        //     }
+        case 'UPDATE_NEW_MESSAGE_BODY':
+            let text = action.payload;
+            return {
+                ...state,
+                newReview: { ...state.newReview, text: text }
+            }
+        case 'UPDATE_NEW_MESSAGE_NAME':
+            let name = action.payload;
+            return {
+                ...state,
+                newReview: { ...state.newReview, name: name }
+            }
+        case 'SET_DATE':
+            let date = action.payload;
+            return {
+                ...state,
+                newReview: { ...state.newReview, date: date }
+            }
+        case 'SET_RATING':
+            let grade = action.payload;
+            return {
+                ...state,
+                newReview: { ...state.newReview, grade: grade }
+            }
+        case 'SEND_MESSAGE':
+            let body = state.newReview;
+            return {
+                ...state, reviews: [body, ...state.reviews],
+                newReview: {}
+            }
         default:
             return state;
     }
 }
-export default reviewsReducer;
+export default reviewsReducer; 

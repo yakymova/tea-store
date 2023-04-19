@@ -11,11 +11,13 @@ const ProductContainer = (props) => {
     let productId = useParams();
 
     useEffect(() => {
-        getSelectedProductFromJson(productId.productId)
-            .then(pr => setProduct(pr));
+        setProduct(getSelectedProductFromJson(productId.productId))
+        // getSelectedProductFromJson(productId.productId)
+        //     .then(pr => setProduct(pr));
 
-        getReviewsFromJson(productId.productId)
-            .then(rev => props.setReviews(rev));
+        props.setReviews(getReviewsFromJson(productId.productId))
+        // getReviewsFromJson(productId.productId)
+        //     .then(rev => props.setReviews(rev));
 
     }, [productId])
 
@@ -39,10 +41,9 @@ const ProductContainer = (props) => {
 }
 
 let mapStateToProps = (state) => {
-    console.log(state.cart);
     return {
         reviews: state.reviews.reviews,
-        cart: state.cart.items
+        cart: state.cart.items,
     }
 }
 

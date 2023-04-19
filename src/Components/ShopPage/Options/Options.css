@@ -14,11 +14,7 @@
 .filter__by-category  menu.filter-visible,
 .sort__by  menu.sort-visible {
     display: block;
-    /* position: absolute;
-    top: 100%;
-    left: 0; */
     background-color: #ffffff;
-    /* z-index: 2; */
 }
 .filter__search {
     border: none;
@@ -71,7 +67,7 @@
     cursor: pointer;
     background-color: #d8d8d874;
 }
-.filter__by-btn.active
+.filter__by-btn.active,
 .sort__by-btn.active {
     background-color: #D8D8D8;
 }
@@ -100,7 +96,7 @@
 }
 .filter__show-all:hover {
     cursor: pointer;
-    background-color: #a18a6811;
+    background-color: #5f4c302b;
     font-weight: 500;
 }
 .filter__item,
@@ -111,10 +107,15 @@
     line-height: 169%;
     margin-bottom: 10px;
     padding-left: 10px;
+    background-color: transparent;
+    transition: all 0.4s;
 }
 .filter__item:hover,
 .sort__item:hover {
     cursor: pointer;
-    background-color: #a18a6811;
+    background-color: #5f4c302b;
     font-weight: 500;
+}
+.active-item{
+    background-color: #a18a6827;
 }

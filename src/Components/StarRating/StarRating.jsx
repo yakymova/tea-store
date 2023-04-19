@@ -20,7 +20,7 @@ const StarRating = ({ starsSelected, countRatings, onlyRead = true }) => {
             <div className={onlyRead ? 'stars only-read' : 'stars'}>
                 {
                     [...Array(totalStars)].map((n, i) => {
-                        return <Star key={i} selected={i < rating} onlyRead={onlyRead} onClick={() => change(i + 1)} />
+                        return <Star key={i} selected={i < rating} onlyRead={onlyRead} onClick={() => change(i + 1)} ind={i} />
                     })
                 }
             </div>

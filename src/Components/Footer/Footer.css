@@ -132,3 +132,16 @@ footer {
         grid-row: 3/4;
     }
 }
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 130px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-left: 5px solid rgba(0, 0, 0, 0.2);
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+    transform: rotate(45deg);
+}

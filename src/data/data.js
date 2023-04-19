@@ -56,6 +56,28 @@ let state = {
                 "text": "Nulla consequuntur odio neque ullam, eius libero ut nostrum quisquam!"
             }
         ],
+        "news": [
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "image": "https://cdn.create.vista.com/api/media/medium/25307393/stock-photo-relaxing-at-hom?token=",
+                "text": "Lorem ipsum dolor sit amet elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisc"
+            },
+            {
+                "title": "At ut saepe labore suscipit",
+                "image": "https://cdn.create.vista.com/api/media/medium/147913821/stock-photo-food-background-different-black-green?token=",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisc "
+            },
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "image": "https://cdn.create.vista.com/api/media/medium/366650528/stock-photo-amazing-landscape-view-tea-plantation?token=",
+                "text": "Lorem ipsum adipisicing elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisc"
+            },
+            {
+                "title": "At ut saepe labore suscipit",
+                "image": "https://cdn.create.vista.com/api/media/medium/567939978/stock-photo-teapot-spices-jars-light-grey?token=",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut saepe labore suscipit voluptates officiis tempora praesentium non similique adipisc"
+            }
+        ],
         "videoUrl": "https://cdn.create.vista.com/api/media/medium/406237710/stock-video-dried-organic-tea-leaves-falling?token="
     },
     "footer": {
