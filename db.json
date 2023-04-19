@@ -254,13 +254,13 @@
         },
         {
             "id": 13,
-            "title": "Chocolate with orange",
+            "title": "Arabica coffee Yirgacheffe ground",
             "price": 15,
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "coffee",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-s-apelsinom-kofe-v-zernakh-0.jpg?itok=-tMHWkaf&timestamp=1651250590",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-s-apelsinom-kofe-v-zernakh-0.jpg?itok=-tMHWkaf&timestamp=1651250590"
+                "https://cdn.create.vista.com/api/media/medium/403844626/stock-photo-pack-coffee-powder-table?token=",
+                "https://cdn.create.vista.com/api/media/medium/85092514/stock-photo-roasted-coffee-beans-with-burlap?token="
             ],
             "rating": {
                 "rate": 4,
@@ -275,13 +275,13 @@
         },
         {
             "id": 14,
-            "title": "Chili chocolate",
+            "title": "Black Original coffee",
             "price": 20,
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "coffee",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-chili.jpg?itok=OnQEEq7A&timestamp=1651252597",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-chili.jpg?itok=OnQEEq7A&timestamp=1651252597"
+                "https://cdn.create.vista.com/api/media/medium/403844626/stock-photo-pack-coffee-powder-table?token=",
+                "https://cdn.create.vista.com/api/media/medium/85092514/stock-photo-roasted-coffee-beans-with-burlap?token="
             ],
             "rating": {
                 "rate": 5,
@@ -296,13 +296,13 @@
         },
         {
             "id": 15,
-            "title": "African Dream",
+            "title": "Premium Arabica coffee",
             "price": 15,
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "coffee",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/efiopiya-sidamo-mechta-afriki.jpg?itok=qbdk5OJH&timestamp=1651258356",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/efiopiya-sidamo-mechta-afriki.jpg?itok=qbdk5OJH&timestamp=1651258356"
+                "https://cdn.create.vista.com/api/media/medium/403844626/stock-photo-pack-coffee-powder-table?token=",
+                "https://cdn.create.vista.com/api/media/medium/85092514/stock-photo-roasted-coffee-beans-with-burlap?token="
             ],
             "rating": {
                 "rate": 0,
@@ -317,13 +317,13 @@
         },
         {
             "id": 16,
-            "title": "Chocolate with cream",
+            "title": "Decaffeinated coffee",
             "price": 21,
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "coffee",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-so-slivkami.jpg?itok=XFqGrxKO&timestamp=1651251797",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/shokolad-so-slivkami.jpg?itok=XFqGrxKO&timestamp=1651251797"
+                "https://cdn.create.vista.com/api/media/medium/403844626/stock-photo-pack-coffee-powder-table?token=",
+                "https://cdn.create.vista.com/api/media/medium/85092514/stock-photo-roasted-coffee-beans-with-burlap?token="
             ],
             "rating": {
                 "rate": 5,
@@ -343,8 +343,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/s-096-1.jpg?itok=r0W1VdO4&timestamp=1608094241",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/s-096-1.jpg?itok=r0W1VdO4&timestamp=1608094241"
+                "https://cdn.create.vista.com/api/media/medium/66146037/stock-photo-glass-teapot?token=",
+                "https://cdn.create.vista.com/api/media/medium/22873710/stock-photo-glass-teapot-of-black-tea?token="
             ],
             "rating": {
                 "rate": 5,
@@ -352,8 +352,8 @@
             },
             "aditional": {
                 "country": "Germany",
-                "features": "completely transparent, with filter",
-                "brand": "Newtea",
+                "features": "completely transparent",
+                "brand": "Herbs-tea",
                 "volume": "600 ml"
             }
         },
@@ -364,8 +364,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/s-051h-2.jpg?itok=VJ-Wqu1S&timestamp=1546951614",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/s-051h-2.jpg?itok=VJ-Wqu1S&timestamp=1546951614"
+                "https://cdn.create.vista.com/api/media/medium/315600778/stock-photo-glass-teapot-hot-tea-white?token=",
+                "https://cdn.create.vista.com/api/media/medium/317129822/stock-photo-glass-teapot-hot-tea-gray?token="
             ],
             "rating": {
                 "rate": 4,
@@ -373,8 +373,8 @@
             },
             "aditional": {
                 "country": "Germany",
-                "features": "borosilicate glass, with bamboo lid",
-                "brand": "Newtea",
+                "features": "borosilicate glass, with filter",
+                "brand": "Herbs-tea",
                 "volume": "900 ml"
             }
         },
@@ -385,8 +385,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/isynskyi-chainyk-tszynlan-osadna_vezha-390ml-00.jpg?itok=98jyb2VQ&timestamp=1657379758",
-                "https://newtea.ua/sites/default/files/styles/100-tablet/public/images/0/Isynskyi-chainyk-Tszynlan-%28Osadna_vezha%29-390ml-01.jpg?itok=dWpW_Ol4"
+                "https://cdn.create.vista.com/api/media/medium/32689155/stock-photo-white-teapot?token=",
+                "https://cdn.create.vista.com/api/media/medium/62274345/stock-photo-tea-pot?token="
             ],
             "rating": {
                 "rate": 5,
@@ -395,7 +395,7 @@
             "aditional": {
                 "country": "China",
                 "features": "ceramic",
-                "brand": "Newtea",
+                "brand": "Herbs-tea",
                 "volume": "390 ml"
             }
         },
@@ -406,8 +406,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/100-tablet/public/images/00/Isynskyi-chainyk-Nove-zhyttia-200ml-01.jpg?itok=u36i6JYP",
-                "https://newtea.ua/sites/default/files/styles/100-tablet/public/images/00/Isynskyi-chainyk-Nove-zhyttia-200ml-05.jpg?itok=QUQjHshA"
+                "https://cdn.create.vista.com/api/media/medium/62286561/stock-photo-teapot?token=",
+                "https://cdn.create.vista.com/api/media/medium/62286557/stock-photo-teapot?token="
             ],
             "rating": {
                 "rate": 0,
@@ -416,8 +416,8 @@
             "aditional": {
                 "country": "China",
                 "features": "ceramic",
-                "brand": "Newtea",
-                "volume": "200 ml"
+                "brand": "Herbs-tea",
+                "volume": "300 ml"
             }
         },
         {
@@ -427,8 +427,8 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/magnitnyj-poceluj-350ml320ml-00.jpg?itok=_n0iQHYh&timestamp=1629026564",
-                "https://newtea.ua/sites/default/files/styles/100/public/images/0/Magnitnyj-poceluj-350ml%2B320ml-01.jpg?itok=SqJvzJLG%20800w"
+                "https://cdn.create.vista.com/api/media/medium/517142890/stock-photo-porcelain-metal-traditional-antique-ethnic?token=",
+                "https://cdn.create.vista.com/api/media/medium/517142906/stock-photo-porcelain-metal-traditional-antique-ethnic?token="
             ],
             "rating": {
                 "rate": 4,
@@ -436,20 +436,20 @@
             },
             "aditional": {
                 "country": "China",
-                "features": "borosilicate glass, completely transparent",
-                "brand": "Jiangsu",
-                "volume": "350 ml + 320 ml"
+                "features": "porcelain and metal",
+                "brand": "Jiangsuu",
+                "volume": "500 ml"
             }
         },
         {
             "id": 22,
-            "title": "Teapot",
+            "title": "Ceramic teapot",
             "price": 100,
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At velit iusto commodi eveniet atque voluptatibus, voluptas nesciunt excepturi! Hic, aliquam! Id, quia placeat veniam sint est fugiat.",
             "category": "teaware",
             "images": [
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/sag-08_2.jpg?itok=dWkLlPxA&timestamp=1547201645",
-                "https://newtea.ua/sites/default/files/styles/product-page/public/node/product/sag-08_2.jpg?itok=dWkLlPxA&timestamp=1547201645"
+                "https://cdn.create.vista.com/api/media/medium/223227598/stock-photo-tea-wooden-table?token=",
+                "https://cdn.create.vista.com/api/media/medium/341928682/stock-photo-white-teapot-cup-wooden-table?token="
             ],
             "rating": {
                 "rate": 5,
@@ -457,9 +457,9 @@
             },
             "aditional": {
                 "country": "China",
-                "features": "with plastic lid, pouring technology",
-                "brand": "Samadoyo",
-                "volume": "500 ml"
+                "features": "ceramic",
+                "brand": "Samado",
+                "volume": "390 ml"
             }
         }
     ],
